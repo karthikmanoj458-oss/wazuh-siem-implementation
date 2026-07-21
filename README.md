@@ -2,68 +2,170 @@
 
 ## Overview
 
-This project demonstrates the complete implementation of the Wazuh Open Source SIEM platform.
+This project demonstrates the complete implementation of the **Wazuh Open Source SIEM (Security Information and Event Management)** platform. The project includes the installation and configuration of the Wazuh Manager, Indexer, Dashboard, deployment of a Wazuh Agent on Kali Linux, and validation of security monitoring features such as File Integrity Monitoring (FIM), Threat Detection, and Security Configuration Assessment (SCA).
 
-## Features
+---
 
-- Wazuh Manager Installation
-- Wazuh Dashboard
-- Wazuh Indexer
-- Kali Linux Agent Deployment
-- File Integrity Monitoring (FIM)
-- Threat Detection
-- Security Configuration Assessment (SCA)
+## Project Objectives
+
+- Install and configure the Wazuh SIEM platform.
+- Deploy and register a Wazuh Agent on Kali Linux.
+- Monitor endpoint activities in real time.
+- Generate File Integrity Monitoring (FIM) events.
+- Detect security events and suspicious activities.
+- Perform Security Configuration Assessment (SCA).
+- Demonstrate centralized security monitoring.
+
+---
 
 ## Environment
 
 | Component | Version |
 |-----------|---------|
 | Wazuh | 4.14.1 |
-| Kali Linux | 2025.3 |
-| Ubuntu | Ubuntu/Debian |
+| Wazuh Dashboard | 4.14.1 |
+| Wazuh Manager | 4.14.1 |
+| Wazuh Indexer | 4.14.1 |
+| Agent OS | Kali Linux 2025.3 |
+| Server OS | Ubuntu/Debian |
 
-## Architecture
+---
 
-Kali Linux Agent
-⬇
-Wazuh Manager
-⬇
-Indexer
-⬇
-Dashboard
+## Project Architecture
+
+```
++------------------+
+| Kali Linux Agent |
++------------------+
+         |
+         | Secure Communication (Port 1514)
+         |
++------------------+
+|  Wazuh Manager   |
++------------------+
+         |
+         |
++------------------+
+| Wazuh Indexer    |
++------------------+
+         |
+         |
++------------------+
+| Wazuh Dashboard  |
++------------------+
+```
+
+---
+
+## Features Implemented
+
+- Wazuh Manager Installation
+- Wazuh Dashboard Configuration
+- Wazuh Indexer Setup
+- Kali Linux Agent Deployment
+- Agent Registration
+- File Integrity Monitoring (FIM)
+- Threat Hunting
+- Security Event Detection
+- Security Configuration Assessment (SCA)
+- Dashboard Monitoring
+
+---
 
 ## Screenshots
 
-### Dashboard
+### Dashboard Overview
 
-![Dashboard](screenshots/dashboard.png)
+![Dashboard](Dashboard-overview.png)
+
+---
 
 ### Agent Status
 
-![Agent](screenshots/agents.png)
+![Agent](Agent-status.png)
+
+---
 
 ### File Integrity Monitoring
 
-![FIM](screenshots/fim-events.png)
+![FIM](File-integrity-monitoring.png)
 
-### Threat Hunting
+---
 
-![Threat](screenshots/threat-hunting.png)
+### Threat Hunting Events
+
+![Threat Hunting](Threat-hunting-events.png)
+
+---
 
 ### Security Configuration Assessment
 
-![SCA](screenshots/sca-results.png)
+![SCA](sca-dashboard.png)
 
-## Technologies Used
+---
+
+### Alerts Dashboard
+
+![Alerts](alerts-dashboard.png)
+
+---
+
+## Skills Demonstrated
+
+- SIEM Implementation
+- Linux Administration
+- Endpoint Monitoring
+- Security Event Monitoring
+- Threat Detection
+- Log Analysis
+- File Integrity Monitoring
+- Security Configuration Assessment
+- Incident Detection
+- Blue Team Operations
+
+---
+
+## Tools Used
 
 - Wazuh
-- Ubuntu
+- Ubuntu Linux
 - Kali Linux
-- Linux
-- SIEM
-- MITRE ATT&CK
-- File Integrity Monitoring
+- Linux Terminal
+- GitHub
+
+---
+
+## Learning Outcomes
+
+Through this project I gained hands-on experience in:
+
+- Installing and configuring a SIEM solution.
+- Monitoring Linux endpoints.
+- Detecting security events.
+- Investigating alerts using the Wazuh Dashboard.
+- Performing security configuration assessments.
+- Understanding centralized log management.
+
+---
+
+## Project Report
+
+The detailed project report is included in this repository:
+
+**WAZUH_REPORT_KARTHIKEYAN.pdf**
+
+---
 
 ## Author
 
 **Karthikeyan M**
+
+Cybersecurity Student
+
+GitHub: https://github.com/karthikmanoj458-oss
+
+---
+
+## License
+
+This project is created for educational and learning purposes.
